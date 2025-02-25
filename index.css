@@ -12,10 +12,13 @@ body{
 h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
+    text-align: center;
 }
 h2{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 30px;
+    text-align: center;
+    padding-top: 5px;
 }
 h3 {
     font-family: 'Bebas Neue', sans-serif;
@@ -74,12 +77,65 @@ nav ul{
     display: none;
 }
 
+#search{
+    display: flex;
+    margin: 50px auto;
+    width: fit-content;
+}
+#search input{
+    border: 2px solid #EB5428;
+}
 
+menu{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
 
+menu li{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    color:#EB5428;
+}
 
+#taco-image img{
+    max-width: 100%;
+    height: auto;
+}
+#intro{
+    margin: 5px;
+}
+#details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 75%;
+}
+dt{
+    margin-left: 10px;
+}
+ dd{
+    margin-left:0px;
+}
 
+#ingredients ul{
+    padding-left: 25px;
+}
+#directions ol{
+    padding-left: 15px;
+    
+}
+#ingredients li {
+    padding-left: 10px;
+    list-style-type: square;
+}
+#directions li{
+    margin: 10px 5px 5px 10px;
+}
 
-
+#side-dishes{
+    background-color:#7ABFBF;
+}
 
 
 
