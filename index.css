@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
 
-/*https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400 */ 
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+}
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+nav a, nav span, menu li, #social li, footer {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+p, dt, dd, li, nav, input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+dt{
+    font-weight: bold;
+}
