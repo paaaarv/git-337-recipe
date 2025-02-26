@@ -110,17 +110,15 @@ menu li{
 }
 #intro{
     margin: 10px;
+    line-height: 1.5em;
 }
 #details{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     width: 75%;
 }
-dt{
+dt, dd{
     margin-left: 10px;
-}
- dd{
-    margin-left:0px;
+    display: inline-block;
 }
 
 #ingredients ul{
@@ -270,6 +268,7 @@ footer{
     #details{
         margin: auto;
         width: 40%;
+        justify-content: center;
     }
 
     #ingredients{
@@ -277,6 +276,12 @@ footer{
     }
     #directions{
         width: 70%;
+    }
+    .rating{
+        display: flex;
+    }
+    .rating p{
+        margin-right: 5px;
     }
     #side-dish-container{
         display: grid;
@@ -289,5 +294,92 @@ footer{
         width: 50%;
         padding-top: 50px;
     }
+
+}
+
+@media screen and (min-width: 1280px){
+    #menu-items{
+        order: 1;
+        flex: 0 0 75%; 
+        justify-items: center;
+
+    }
+    #avatar{
+        order: 2;
+    }
+    nav{
+        flex-wrap: nowrap;
+    }
+    nav ul{
+        width: 60%;
+        justify-content: center;
+    }
+    #search{
+        position: relative;
+        top: 75px;
+        left: 0;
+
+    }
+    #search input{
+        width: 20em;
+    }
+    h1{
+        text-align: center;
+    }
+    #tacos-container{
+        display: flex;
+
+    }
+    menu{
+        flex-direction: column;
+        width: 10%;
+        position:static;
+        border: 2px solid #EB5428;
+        height: auto;
+        margin-bottom: 2px;
+    }
+    #taco-image{
+        width: 40%;
+    }
+    #intro{
+        width: 40%;
+    }
+    #details-container{
+        background-color:#0D0D0D;
+        color:#7ABFBF;
+        padding-bottom: 10px;
+
+    }
+    #details{
+        grid-template-columns: repeat(5,1fr);
+        width: 100%;
+        margin: auto;
+        justify-items: center;
+    }
+
+    .detail-container{
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+    }
+    #side-dish-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .side-dish{
+        flex-direction: column;
+    }
+  .side-dish .img-container{
+    width: 100%;
+  }
+  #footer-info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:left;
+    align-items: start;
+  }
+  #footer-info img{
+    width: 25%;
+    margin-right: 5px;
+  }
 
 }
